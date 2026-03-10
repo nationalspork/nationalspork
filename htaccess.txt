@@ -1,0 +1,11 @@
+AddHandler application/x-httpd-php70 .php .php5 .php4 .php3
+
+ErrorDocument 404 https://HazmatHijinks.com/
+ErrorDocument 500 https://HazmatHijinks.com/
+
+RewriteEngine On
+
+# force https
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
